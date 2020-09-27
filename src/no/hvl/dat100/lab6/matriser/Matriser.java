@@ -26,18 +26,18 @@ public class Matriser {
 
 	// c)
 	public static int[][] skaler(int tall, int[][] matrise) {
+		int skaler[][] = new int[matrise.length][matrise[0].length]; 
 		for (int i = 0; i < matrise.length; i++) {
 			for (int l = 0; l < matrise[i].length; l++) {
-				matrise[i][l] *= tall;
+				skaler[i][l] = tall * matrise[i][l];
 			}
 		}
-	return matrise;
+	return skaler;
 	}
 
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
 		Boolean lik = false;
-		
 		for (int i = 0; i < a.length; i++) {
 			for (int l = 0; l < a[i].length; l++) {
 				if (a[i][l] == b[i][l]) {
@@ -55,7 +55,6 @@ public class Matriser {
 				 speila[l][i] = matrise[i][l]; 
 			}
 		}
-		Matriser.skrivUt(speila); //Skaler endrer dette resultatet???
 	return speila;
 	}
 

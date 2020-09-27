@@ -17,14 +17,6 @@ class MatriserEnhetsTester {
 		
 		assertEquals("1 2 3 \n4 5 6 \n7 8 9 \n",Matriser.tilStreng(a));
 	}
-
-	@Test
-	void testSkaler() {
-		
-		int[][] skalert = { {2,4,6}, {8,10,12}, {14,16,18} };
-		
-		assertArrayEquals(skalert,Matriser.skaler(2,a)); //Virka som skalert påvirker resultatet til speilet???
-	}
 	
 	@Test
 	void testSpeile() {
@@ -32,6 +24,16 @@ class MatriserEnhetsTester {
 			
 		assertArrayEquals(speilet,Matriser.speile(a));
 	}
+	
+	@Test
+	void testSkaler() {
+		
+		int[][] skalert = { {2,4,6}, {8,10,12}, {14,16,18} };
+		
+		assertArrayEquals(skalert,Matriser.skaler(2,a));
+	}
+	
+
 	
 	@Test 
 	void testMultipliser () {
@@ -48,4 +50,6 @@ class MatriserEnhetsTester {
 		assertTrue(Matriser.erLik(a, a));
 		assertFalse(Matriser.erLik(a, b));
 	}
+	
+
 }
