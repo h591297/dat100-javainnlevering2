@@ -23,12 +23,11 @@ class MatriserEnhetsTester {
 		
 		int[][] skalert = { {2,4,6}, {8,10,12}, {14,16,18} };
 		
-		assertArrayEquals(skalert,Matriser.skaler(2,a));
+		assertArrayEquals(skalert,Matriser.skaler(2,a)); //Virka som skalert påvirker resultatet til speilet???
 	}
 	
 	@Test
 	void testSpeile() {
-		
 		int[][] speilet = { {1,4,7}, {2,5,8}, {3,6,9} };
 			
 		assertArrayEquals(speilet,Matriser.speile(a));

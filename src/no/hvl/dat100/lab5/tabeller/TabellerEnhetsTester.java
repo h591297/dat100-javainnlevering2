@@ -32,6 +32,20 @@ class TabellerEnhetsTester {
 		assertEquals(1,Tabeller.summer(tabell2));
 		assertEquals(0,Tabeller.summer(tabell3));
 	}
+	
+	@Test
+	void testSummerWhile() {
+		assertEquals(11,Tabeller.summerWhile(tabell1));
+		assertEquals(1,Tabeller.summerWhile(tabell2));
+		assertEquals(0,Tabeller.summerWhile(tabell3));
+	}
+	
+	@Test
+	void testSummerUtvidet() {
+		assertEquals(11,Tabeller.summerUtvidet(tabell1));
+		assertEquals(1,Tabeller.summerUtvidet(tabell2));
+		assertEquals(0,Tabeller.summerUtvidet(tabell3));
+	}
 
 	@Test
 	void testfinnesTall () {

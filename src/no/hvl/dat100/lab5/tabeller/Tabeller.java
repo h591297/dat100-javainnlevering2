@@ -40,6 +40,24 @@ public class Tabeller {
 		}
 		return sum;
 	}
+	
+	public static int summerWhile(int[] tabell) {
+		int sum = 0;
+		int i = 0;
+		while (i < tabell.length) {
+			sum += tabell[i];
+			i++;
+		}
+		return sum;
+	}
+	
+	public static int summerUtvidet(int[] tabell) {
+		int sum = 0;
+		for (int i=0; i < tabell.length; i++) {
+			sum += tabell[i];
+		}
+		return sum;
+	}
 
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
